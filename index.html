@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>B Organizer — Limpeza Profissional</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="wrap nav-content">
+      <a href="#home" class="logo">
+        <img src="images/logo_no_bg_creme.png" alt="B Organizer Logo">
+      </a>
+  
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        ☰
+      </button>
+  
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#about">Quem Somos</a></li>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+  <header class="hero" id="home">
+  
+    
+    <div class="hero__bg" id="heroBg"></div>
+
+    <div class="hero__layer hero__layer--1" id="layer1"></div>
+    <div class="wrap hero__content reveal">
+     <br/><br/><br/>
+      <div class="kicker">Limpeza e Organização Profissional</div>
+      <h1>Deixe o brilho conosco — limpeza residencial e empresarial</h1>
+      <p class="lead">Serviços rápidos, seguros e com equipe treinada. Atendemos em todo o perímetro urbano com produtos profissionais e atenção aos detalhes.</p>
+      <div class="cta">
+        <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Solicitar Orçamento</button>
+        <a class="btn btn--ghost" href="#services">Nossos Serviços</a>
+      </div>
+    </div>
+    <div class="wave"></div>
+  </header>
+
+  <main>
+
+    <div class="about-wrapper-bg">
+    <section class="about wrap" id="about">
+      <h2 class="reveal">Quem Somos</h2>
+      <div class="grid" style="margin-top:14px;align-items:center">
+        <div class="reveal">
+          <p>
+            A <strong>B Organizer</strong> nasceu com o propósito de oferecer serviços de 
+            <em>limpeza profissional</em> com qualidade, segurança e confiança. 
+            Nossa equipe é formada por colaboradores treinados, que passam por 
+            atualizações constantes para garantir o melhor atendimento.
+          </p>
+          <p style="margin-top:10px">
+            Atuamos em ambientes residenciais e comerciais, sempre utilizando 
+            <strong>produtos certificados e sustentáveis</strong>, respeitando o 
+            meio ambiente e priorizando a saúde de nossos clientes.
+          </p>
+        </div>
+        <div class="card float reveal" style="min-width:260px;flex:1">
+          <h3>Nossos diferenciais</h3>
+          <ul style="margin-top:10px;list-style:disc;padding-left:20px">
+            <li>Mais de 10 anos de experiência no setor</li>
+            <li>Equipe com treinamento contínuo</li>
+            <li>Atendimento rápido e personalizado</li>
+            <li>Produtos ecológicos e seguros</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+    <section class="services wrap" id="services">
+      <h2 class="reveal">Nossos Serviços</h2>
+      <div class="grid" style="margin-top:14px">
+        <div class="card reveal">
+          <div style="display:flex;align-items:center;gap:12px"><div class="icon icon-residencial"></div><div>
+            <h3>Limpeza Residencial</h3>
+            <p>Faxina completa, limpeza pós-obra, polimento de pisos e organização de ambientes.</p>
+          </div></div>
+        </div>
+        <div class="card reveal">
+          <div style="display:flex;align-items:center;gap:12px"><div class="icon icon-comercial"></div><div>
+            <h3>Limpeza Comercial</h3><p>Serviço terceirizado para lojas, escritórios, condomínios e áreas comuns.</p>
+          </div></div>
+        </div>
+        <div class="card reveal">
+          <div style="display:flex;align-items:center;gap:12px"><div class="icon icon-higienizacao"></div><div>
+            <h3>Higienização</h3><p>Desinfecção com produtos aprovados para eliminar germes e odores, ideal para ambientes sensíveis.</p>
+          </div></div>
+        </div>
+        <div class="card reveal">
+          <div style="display:flex;align-items:center;gap:12px"><div class="icon icon-organizacao"></div><div>
+            <h3>Organização</h3><p>Organização e padronização de casas. Armarios, garagens, guarda-roupas, ou qualquer outro lugar.</p>
+          </div></div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="parallax-band" aria-hidden="true">
+      <div class="wrap">
+        <h2 class="reveal">Por que escolher a B Organizer?</h2>
+        <p class="reveal">Equipe certificada • Seguro contra acidentes • Produtos sustentáveis • Atendimento personalizado</p>
+        <div style="display:flex;gap:12px;margin-top:18px;flex-wrap:wrap">
+          <div class="card float reveal" style="min-width:220px;flex:1"> 
+            <h3>Profissionais treindos</h3>
+            <p class="muted">Treinamento contínuo e checagem de qualidade ao término de cada serviço.</p>
+          </div>
+          <div class="card float reveal" style="min-width:220px;flex:1"> 
+            <h3>Produtos ecológicos</h3>
+            <p class="muted">Linha sustentável que reduz impacto ambiental sem perder eficiência.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="testemonial-wrapper-bg">
+      <section class="testimonials wrap">
+        <h2 class="reveal">Depoimentos</h2>
+        <div class="quote-container">
+          <div class="quote-slider" id="quoteSlider"></div>
+        </div>
+      </section>
+    </div>
+
+    <div class="contato-wrapper-bg">
+      <section class="contact wrap" id="contact">
+        <h2 class="reveal">Solicite um orçamento</h2>
+        <form id="contact-form" class="reveal">
+          <input type="text" id="name" placeholder="Nome" required>
+          <input type="tel" id="phone" placeholder="Telefone/WhatsApp" required>
+          <input type="email" id="email" placeholder="E-mail" required>
+          <input type="text" id="service" placeholder="Serviço desejado (ex: residencial)" required>
+          <textarea id="message" placeholder="Mensagem / detalhes"></textarea>
+          <button class="btn" type="submit">Enviar Pedido</button>
+        </form>
+      </section>
+    </div>
+  </main>
+  
+
+  <footer class="foot">
+    <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+      <div>
+        <strong>B Organizer</strong><br>
+        Auckland, NZ • (27) 2727-000
+      </div>
+      <br/><br/><br/>
+      <div style="opacity:.9">© <span id="year"></span> Todos os direitos reservados</div>
+    </div>
+  </footer>
+
+  <script>
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // simple parallax effect (layered) — will adjust transform on scroll
+    const heroBg = document.getElementById('heroBg');
+    window.addEventListener('scroll', ()=>{
+      const sc = window.scrollY;
+      // bg moves slower
+      heroBg.style.transform = `translateY(${sc * 0.18}px) scale(1.03)`;
+      // layer subtle move
+      const l1 = document.getElementById('layer1');
+      l1.style.transform = `translateY(${sc * 0.06}px)`;
+    },{passive:true});
+
+    // reveal on scroll
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting) e.target.classList.add('show');
+      });
+    },{threshold:0.12});
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+    // fake form submit (replace with API call)
+    function sendForm(){
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const service = document.getElementById('service').value.trim();
+      if(!name||!phone||!service){alert('Por favor, preencha os campos obrigatórios.');return}
+      alert('Pedido enviado! Entraremos em contato pelo telefone/whatsapp informado.');
+      document.querySelector('form').reset();
+    }
+
+    // smooth link scrolling for internal anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{e.preventDefault();document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'});});
+    });
+  </script>
+
+  <!-- Script -->
+  <script>
+    const navToggle = document.getElementById("navToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    navToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+      navToggle.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("show");
+        navToggle.classList.remove("active");
+      });
+    });
+  </script>
+
+<script>
+  const testimonials = [
+  { name: "Mariana F.", text: "Excelente trabalho. A equipe foi pontual e minha casa nunca esteve tão limpa." },
+  { name: "Escritório X", text: "Contratamos limpeza semanal e notamos melhora na organização e conservação do espaço." },
+  { name: "João P.", text: "Serviço impecável! Recomendo para todos." },
+  { name: "Ana L.", text: "Super profissionais e muito organizados." },
+  { name: "Empresa Y", text: "Melhoramos a aparência do escritório em poucas visitas." }
+];
+
+const slider = document.getElementById("quoteSlider");
+let currentIndex = 0;
+const visible = 2;       // number of quotes shown at once
+const fadeDuration = 800; // match with CSS transition duration
+
+function renderQuotes() {
+  // Remove old quotes
+  slider.innerHTML = '';
+
+  // Add next set of quotes
+  for (let i = 0; i < visible; i++) {
+    const idx = (currentIndex + i) % testimonials.length;
+    const div = document.createElement('div');
+    div.className = 'quote';
+    div.innerHTML = `<strong>${testimonials[idx].name}</strong><p>${testimonials[idx].text}</p>`;
+    slider.appendChild(div);
+
+    // trigger fade-in
+    requestAnimationFrame(() => {
+      div.classList.add('fade-in');
+    });
+  }
+
+  // Update index for next rotation
+  currentIndex = (currentIndex + visible) % testimonials.length;
+}
+
+// Initial render
+renderQuotes();
+
+// Rotate automatically
+setInterval(renderQuotes, 5500);
+
+
+
+</script>
+
+<!-- EmailJS Script -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  // Initialize EmailJS
+  emailjs.init('Mu2iQNvatXW7dx_wa'); // Replace with your EmailJS public key
+
+  const form = document.getElementById('contact-form');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Collect form data
+    const formData = {
+      name: document.getElementById('name').value.trim(),
+      phone: document.getElementById('phone').value.trim(),
+      email: document.getElementById('email').value.trim(),
+      service: document.getElementById('service').value.trim(),
+      message: document.getElementById('message').value.trim(),
+      time: new Date().toLocaleString(),
+      year: new Date().getFullYear()
+    };
+
+    // Simple validation
+    if (!formData.name || !formData.phone || !formData.service) {
+      alert('Por favor, preencha os campos obrigatórios.');
+      return;
+    }
+
+    // Send via EmailJS
+    emailjs.send('service_mg7xhjq', 'template_gg0bf8l', formData)
+      .then(() => {
+        alert('Pedido enviado! Entraremos em contato em breve.');
+        form.reset();
+      })
+      .catch((err) => {
+        console.error('Erro ao enviar o pedido:', err);
+        alert('Erro ao enviar o pedido. Tente novamente mais tarde.');
+      });
+  });
+</script>
+</body>
+</html>
